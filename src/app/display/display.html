@@ -1,0 +1,8 @@
+<div class="display">
+  <div class="mini-history-panel" *ngIf="history.length > 0">
+    <div *ngFor="let item of history.slice(0, 3)" class="mini-history-item">
+      {{ item }}
+    </div>
+  </div>
+  <span class="display-value">{{ displayValue }}</span>
+</div>

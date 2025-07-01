@@ -1,0 +1,51 @@
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 370px;
+  margin: 0 auto;
+}
+
+.special-top-row {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #ffb0d8;
+  transition: background-color 0.2s;
+
+  &:active {
+    background-color: #cccccc;
+  }
+}
+
+.operator {
+  background-color: #e549ae;
+  color: white;
+
+  &:active {
+    background-color: #e0096d;
+  }
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.equals {
+  background-color: #aa0eaf;
+  color: white;
+
+  &:active {
+    background-color: #c334e0;
+  }
+}

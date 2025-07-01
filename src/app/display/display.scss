@@ -1,0 +1,47 @@
+.display {
+  width: 100%;
+  max-width: 370px;
+  background-color: #222;
+  color: white;
+  text-align: right;
+  padding: 16px 24px;
+  font-size: 2.5rem;
+  border-radius: 10px;
+  margin: 0 auto 16px auto;
+  box-sizing: border-box;
+  overflow-x: auto;
+  min-height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mini-history-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 0;
+  max-width: 90px;
+  margin-right: 10px;
+}
+
+.mini-history-item {
+  font-size: 0.75rem;
+  color: #bbb;
+  opacity: 0.7;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2;
+  margin-bottom: 2px;
+  text-align: left;
+}
+
+.display-value {
+  margin-left: auto;
+  padding-left: 10px;
+  font-size: 2.5rem;
+  text-align: right;
+}

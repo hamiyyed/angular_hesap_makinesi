@@ -1,0 +1,22 @@
+<div class="calculator-grid">
+  <app-display
+    [displayValue]="displayValue"
+    [history]="history"
+    [isHistoryVisible]="isHistoryVisible"
+    (toggleHistory)="toggleHistory()"
+  ></app-display>
+  <app-keyboard
+    (numberClick)="onNumberClick($event)"
+    (operatorClick)="onOperatorClick($event)"
+    (equalsClick)="onEqualsClick()"
+    (clearClick)="onClearClick()"
+    (deleteClick)="onDeleteClick()"
+  ></app-keyboard>
+</div>
+
+<div class="history-container" *ngIf="history.length > 0">
+  <h3>Geçmiş</h3>
+  <ul>
+    <li *ngFor="let calc of history">{{ calc }}</li>
+  </ul>
+</div>

@@ -1,0 +1,22 @@
+<div class="buttons">
+  <div class="special-top-row">
+    <button (click)="clearClick.emit()" class="operator">C</button>
+    <button (click)="deleteClick.emit()" class="operator">←</button>
+  </div>
+  <button (click)="operatorClick.emit('/')" class="operator">÷</button>
+  <button (click)="numberClick.emit('7')">7</button>
+  <button (click)="numberClick.emit('8')">8</button>
+  <button (click)="numberClick.emit('9')">9</button>
+  <button (click)="operatorClick.emit('*')" class="operator">×</button>
+  <button (click)="numberClick.emit('4')">4</button>
+  <button (click)="numberClick.emit('5')">5</button>
+  <button (click)="numberClick.emit('6')">6</button>
+  <button (click)="operatorClick.emit('-')" class="operator">-</button>
+  <button (click)="numberClick.emit('1')">1</button>
+  <button (click)="numberClick.emit('2')">2</button>
+  <button (click)="numberClick.emit('3')">3</button>
+  <button (click)="operatorClick.emit('+')" class="operator">+</button>
+  <button (click)="numberClick.emit('0')" class="zero">0</button>
+  <button (click)="numberClick.emit('.')">.</button>
+  <button (click)="equalsClick.emit()" class="equals">=</button>
+</div>

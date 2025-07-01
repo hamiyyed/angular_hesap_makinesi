@@ -1,0 +1,142 @@
+.calculator-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 24px 0 24px 0;
+  background-color: #fff;
+}
+
+.display {
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  font-size: 2.5rem;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  overflow-x: auto;
+  min-height: 80px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.mini-history-panel {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+  max-width: 60%;
+  text-align: left;
+}
+
+.mini-history-item {
+  font-size: 0.8rem;
+  color: #888;
+  opacity: 0.8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-bottom: 2px;
+  
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.display-value {
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100%;
+}
+
+.special-top-row {
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+button {
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  background-color: #ffb0d8;
+  transition: background-color 0.2s;
+
+  &:active {
+    background-color: #cccccc;
+  }
+}
+
+.operator {
+  background-color: #e549ae;
+  color: white;
+
+  &:active {
+    background-color: #e0096d;
+  }
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+.equals {
+  background-color: #aa0eaf;
+  color: white;
+
+  &:active {
+    background-color: #c334e0;
+  }
+}
+
+.history-container {
+  width: 100%;
+  max-width: 350px;
+  margin: 2rem auto;
+  padding: 0 20px;
+
+  h3 {
+    text-align: center;
+    color: #555;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  li {
+    text-align: right;
+    padding: 5px 10px;
+    color: #333;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
