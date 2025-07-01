@@ -1,61 +1,64 @@
-
 # HesapMakinem
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.4.
+HesapMakinem, Angular ile geliştirilmiş, temel matematiksel işlemleri (toplama, çıkarma, çarpma, bölme) yapabilen modern ve kullanıcı dostu bir hesap makinesi uygulamasıdır.
 
-## Development server
+## İçindekiler
 
-To start a local development server, run:
+- [Özellikler](#özellikler)
+- [Kullanılan Teknolojiler](#kullanılan-teknolojiler)
+- [Kurulum](#kurulum)
+- [Kullanım](#kullanım)
+- [Katkıda Bulunma](#katkıda-bulunma)
+- [İletişim](#iletişim)
+- [Lisans](#lisans)
+
+## Özellikler
+
+- Temel aritmetik işlemler: toplama, çıkarma, çarpma, bölme
+- Modern ve sade kullanıcı arayüzü
+- Hızlı ve kolay kullanım
+- Responsive tasarım (mobil uyumlu)
+- Açık kaynak kodlu
+
+## Kullanılan Teknolojiler
+
+- [Angular](https://angular.io/) (v20+)
+- TypeScript
+- SCSS
+
+## Kurulum
+
+Projeyi kendi bilgisayarınızda çalıştırmak için:
 
 ```bash
+git clone <repo-link>
+cd hesap_makinem
+npm install
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Tarayıcınızda `http://localhost:4200/` adresine giderek uygulamayı kullanmaya başlayabilirsiniz.
 
-## Code scaffolding
+## Kullanım
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Uygulama açıldığında, ekrandaki tuşlar yardımıyla işlemlerinizi gerçekleştirebilirsiniz. Sonuçlar anında ekranda görüntülenir.
 
-```bash
-ng generate component component-name
-```
+## Katkıda Bulunma
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Katkı sağlamak için:
 
-```bash
-ng generate --help
-```
+1. Bu repoyu fork'layın
+2. Yeni bir branch oluşturun (`git checkout -b ozellik-adi`)
+3. Değişikliklerinizi yapın ve commit edin (`git commit -m 'Açıklama'`)
+4. Branch'inizi push'layın (`git push origin ozellik-adi`)
+5. Bir pull request oluşturun
 
-## Building
+## İletişim
 
-To build the project run:
+Her türlü soru, öneri veya hata bildirimi için [github profilinizin linki veya e-posta adresiniz] üzerinden iletişime geçebilirsiniz.
 
-```bash
-ng build
-```
+## Lisans
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+MIT Lisansı ile lisanslanmıştır. 
 
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
->>>>>>> 494111d (initial commit)
+---
